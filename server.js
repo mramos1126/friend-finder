@@ -14,22 +14,9 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 
-//require('./app/routing/api-routes.js')(app); 
+require('./app/routing/api-routes.js')(app); 
 require('./app/routing/html-routes.js')(app);
 
-
-// app.get('/survey', function(req, res){
-// 		res.sendFile(path.join(__dirname + '/../public/survey.html'));
-// 	});
-
-// 	app.get('/home', function(req, res){
-// 		res.sendFile(path.join(__dirname + '/../public/home.html'));
-// 	});
-
-// 	// If no matching route is found default to home
-// 	app.use(function(req, res){
-// 		res.sendFile(path.join(__dirname + '/../public/home.html'));
-// 	});
 
 
 
